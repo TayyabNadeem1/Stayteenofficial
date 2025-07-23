@@ -1,0 +1,1187 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Poppins:ital,wght@0,100;1,200;1,300&display=swap');
+
+
+.pb-5 {
+    padding-bottom: 0rem !important;
+}
+.my-5 {
+    margin-top: 0rem !important;
+    margin-bottom: rem !important;
+}
+
+.nav-buttons{
+    margin-left:60%;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+p{
+    color: #1d1d1d;
+}
+
+body{
+    font-family:'Poppins', 'sans-sarif';
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+h7{
+    font-size: 30px;
+    font-weight: bolder;
+    color: #000;
+}
+
+h3{
+    font-size: 16px;
+    font-weight: bolder;
+    color: #000;
+}
+h4{
+    font-size: 14px;
+    font-weight:bolder
+}
+
+h5{
+    font-size: 11px;
+    font-weight: 600;
+}
+
+h6{
+  color: #8d8d8d;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+button{
+    font-size: 0.8rem;
+    font-weight: 900;
+    outline: none;
+    border: none;
+    background-color: #1d1d1d;
+    color: aliceblue;
+    padding: 13px 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+button:hover{
+    background-color: white;
+}
+.navbar {
+    font-size: 16px;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    top: 0;
+    left: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    background-color: transparent !important; /* Ensure transparency */
+    border: none; /* Remove borders */
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-weight: 800;
+    font-size: 20px;
+    padding: 0 20px;
+    color: #000;
+    transition: 0.4s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.nav-icons:hover,
+.navbar-light .navbar-nav .nav-link.active .nav-icons:hover {
+    color: grey;
+}
+
+.nav-icons .fa-user {
+    margin-left: 8px;
+}
+
+.nav-icons {
+    font-size: 1.2rem;
+    padding: 0 0.7px;
+    transition: 0.4s ease;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+@media only screen and (max-width: 990px) {
+    .nav-buttons {
+        margin: 10px;
+    }
+    .nav-button ul {
+        margin: 1rem;
+        justify-content: start;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .nav-icons {
+        margin: 20px 5px 10px 20px;
+    }
+}
+
+
+#home{
+        
+    /* background-image: url(/gallery/woman-applying-face-cream.jpg); */
+    /* background-clip: url(/gallery//original.mp4); */
+    
+
+    width:100%;
+    height: 110vh;
+    background-size:cover ;
+    /* background-position-x: 30px;
+    background-position-y:-250px ; */
+    display: flex;
+    background-size: cover;
+    
+    
+
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start ;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+} 
+
+ /* CSS for your background image */
+        #home {
+            margin: 0;
+            padding: 0;
+            margin-top: 70px;
+            /* background-image: url('/gallery/pexels-anna-shvets-5069412.jpg');  */
+            background-size: cover; /* Ensure the background covers the entire viewport */
+            background-position: center; /* Center the background image */
+            height: 100vh; /* Set height to viewport height */
+            /* Add more styles as needed */
+        }
+
+        /* Media query for phones */
+        @media (max-width: 380px) {
+            body {
+                background-size:cover; /* Adjust background size for smaller screens */
+                background-position: top; /* Position background image at the top */
+            }
+        }
+
+        #mainImg {
+            max-width: 100%; /* Ensure image resizes responsively */
+            height: auto; /* Maintain image aspect ratio */
+        }
+
+        @keyframes example {
+            0% {
+               background-image: url("/gallery/123.jpg");
+                background-size: cover;
+            }
+            25% {
+                background-image: url("/gallery/124.jpg");
+                background-size: contain;
+            }
+            50% {
+                background-image: url("/gallery/125.jpg");
+                background-size: cover;
+            }
+            75% {
+                background-image: url("/gallery/126.jpg");
+                background-size: contain;
+        }
+            100% {
+                background-image: url("/gallery/125.jpg");
+                background-size: cover;
+            }
+        }
+        
+/* Apply the animation to the background of the #home section */
+#home {
+    animation: example 10s infinite; /* Adjust the duration and iteration as needed */
+    
+    background-size: cover; /* Ensure the background image covers the entire section */
+    /* Other section styles */
+}
+#home span{
+    color: #ff523b;
+}
+
+.brand .row{
+    padding-top:60px ;
+}
+
+#neww .one img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+
+}
+
+#new .one{
+    position: relative;
+}
+
+#new .one .details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: burlywood;
+    font-weight: bold;
+    transition: 0.4 ease;
+    opacity: 0.8;
+    background-color: rgb(1,1,1);
+}
+
+
+/* Product */
+.product {
+    display: flex; /* Use flexbox to align items vertically */
+    flex-direction: column; /* Stack the items vertically */
+    align-items: center; /* Center align items horizontally */
+    cursor: pointer;
+    margin-bottom: 3rem; /* Increase the margin-bottom to create more space between products */
+    padding-top: 2rem; /* Increase the padding to make the product div bigger */
+
+}
+
+.product img {
+    transition: 0.3s all;
+    max-width: 100%; /* Makes the image responsive */
+    height: auto;    /* Keeps the aspect ratio */
+    width: 90%;     /* Allows the image to scale to its container's width */
+    max-height: 230px; /* Limits the height to 230px */
+    background-size: cover; /* Covers the container, cropping if necessary */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; 
+}
+
+
+.product:hover img {
+    opacity: 0.7;
+}
+
+.product .buy-btn {
+    background-color: #000;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 0.3s all;
+}
+
+.product:hover .buy-btn {
+    transform: translateY(0px);
+    opacity: 1; 
+}
+
+.table > :not(caption) > * {
+    padding: 0.2rem 0.2rem;
+    color: var(--bs-table-color-state, var(--bs-table-color-type, var(--bs-table-color)));
+    background-color: #212529;
+    border-bottom-width: var(--bs-border-width);
+    box-shadow: inset 0 0 0 9999px var(--bs-table-bg-state, var(--bs-table-bg-type, var(--bs-table-accent-bg)));
+}
+
+.p-4 {
+    padding: 3rem!important;
+}
+/* 
+@media (min-width: 992px)
+.container, .container-lg, .container-md, .container-sm {
+    max-width: 100%;
+} */
+
+
+/* #################################### FOOTER ###################################################3 */
+.footer {
+    padding: 1rem;
+    margin-top: 2rem; /* Adjust margin as needed */
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    text-align: center;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.342);
+}
+
+.footer p {
+    margin-bottom: 0.5rem; /* Adjust margin as needed */
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 767px) {
+    .col-lg-3 {
+      order: 1; /* Move credentials to the top on smaller screens */
+    }
+  
+    .col-lg-4:nth-child(2) {
+      order: 2; /* Move opening hours to the second position on smaller screens */
+    }
+  
+    .col-lg-4:nth-child(3) {
+      order: 3; /* Maintain the original order of other section */
+    }
+  }
+  
+
+.logo{
+    width: 40px;
+    height: 40px;
+}
+
+.navbar .brand{
+    color: #000;
+    margin: 3px 5px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis:24% ;
+    cursor: pointer;
+}
+
+
+.single-product input:focus{
+    outline: none;
+}
+ 
+.single-product input{
+    width: 50px;
+    height: 40px;
+    font-weight: bolder;
+   padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.single-product .buy-btn{
+    background-color: #000;
+    opacity: 1;
+    transition: 0.4s all;
+}
+
+.single-product .buy-btn:hover{
+    background-color: grey;
+    color: #000;
+}
+
+/*  Cart */
+
+.cart table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart .product-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cart th{
+    text-align: left;
+    padding: 10px 5px;
+    color: #fff;
+    background-color: #000;
+}
+
+.cart td{
+    padding: 10px 0px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.cart td img{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+td input:focus{
+    outline: none;
+}
+ 
+td input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-weight: bolder;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.cart td a{
+    color: #000;
+}
+
+.cart .remove-btn{
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: white;
+    border: none;
+    font-weight: bolder;
+    width: 100%;
+}
+
+.cart .edit-btn{
+    color: #f6774b;
+    text-decoration: none;
+    font-size: 15px;
+    background-color: #fff;
+    border: none;
+    
+}
+
+.cart .product.info p{
+    margin: 3px;
+}
+
+.cart-total{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cart-total table{
+    width: 100%;
+    max-width: 500px;
+    border-top: 3px solid #000;
+}
+
+td:last-child{
+    text-align: right;
+}
+
+th:last-child{
+    text-align: right;
+}
+
+.checkout-btn{
+    background-color: #000;
+    font-weight: bolder;
+    font-size: medium;
+    color: #fff;
+}
+
+.checkout-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* Checkout */
+
+#checkout-form .checkout-small-element{
+    display: inline-block;
+    width: 48%;
+    margin: 10px auto;
+}
+
+#checkout-form .checkout-large-element{
+    width: 97%;
+
+}
+
+#checkout-form .checkout-btn-container{
+    margin: 10px;
+    text-align: right;
+    margin-right: 40px;
+}
+
+#checkout-form #checkout-btn{
+    color: #fff;
+    background-color: #000;
+    font-weight: bolder;
+}
+
+
+label {
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 17px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+.cart_quantity{
+    background-color: darkgray;
+    size: -20px;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 50%;
+    margin: -5px;
+    font-size: 15px;
+}
+
+
+.color{
+     
+    font-size: 1.3rem;
+
+    color: #000;
+
+    padding-top:7px;
+}
+
+.message{
+    border-style: solid;
+  border-width: 5px 5px 4px 5px;
+    width: fit-content;
+    
+}
+
+
+/* ############# About Page Heading ################# */
+
+.about{
+    padding: 10rem 0rem;
+}
+
+.about-heading{
+    border-bottom: 4px solid #000 ;
+}
+
+/* ############## About Wrapper Style ################ */
+
+.about-wrapper{
+    text-align: left;
+    margin-top: 2rem;
+}
+
+ .about-wrapper .left{
+    float:left;
+    width:40%;
+}
+
+.about-wrapper .right{
+    float: right;
+    width:40%;
+} 
+ 
+.about-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+} 
+
+.about-wrapper li::before{
+    content: '\2713';
+    color:#000;
+    font-weight: bold;
+    padding-right:1rem ;
+
+}
+
+::marker{
+    color:#f4f4f4;
+}
+
+/* ############## banner stylling ############# */
+
+.cta-banner{
+    background:#000;
+    color: #f4f4f4;
+    padding: 0.5rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.342);
+    margin-top: 3rem;
+}
+
+.cta-banner-left{
+    width :60%;
+    float: left;
+    text-align: center;
+}
+
+.cta-banner-right{
+    width: 40%;
+    float: right;
+    text-align: right;
+    margin-top: .5rem;
+}
+
+.cta-line{
+    font-weight: 600;
+    font-size: 2rem;
+    color: #fff;
+
+    margin-top: 1.5rem;
+}
+
+.btn-cta{
+    text-align: center;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border: 2px solid white;
+    padding: 1.8rem 2rem;
+    text-decoration: none;
+    letter-spacing: 0.3rem;
+    color: #f4f4f4;
+}
+.cta-banner::after{
+    content:'';
+    display: block;
+    clear: both;
+
+}
+
+
+
+
+/* ################## count stylling ################## */
+
+.counts{
+    margin-top: 5rem;
+}
+
+.count-item{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.counts::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.count-item span{
+    font-size: 2rem;
+    font-weight: 700;
+    color:rgb(24, 41, 51);
+}
+
+.count-item p{
+    font-weight: 700;
+    
+    font-size: 1.8rem;
+}
+
+.Container{
+    max-width: 1400px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* ################## utility classes ######################  */
+
+.big-boy{
+    font-size: 9.3em;
+}
+.vlg-heading{
+    font-weight: bolder;
+    font-size: 2rem;
+}
+.lg-heading{
+    font-size: 2rem;
+}
+
+.col-4 .mid-heading{
+    font-size: 1.7rem;
+}
+
+.mid-heading{
+    font-size: 1.7rem;
+}
+
+.sml-heading{
+    font-size: 1.5rem;
+}   
+
+.text-site{
+    color:#000 ;
+}
+
+.text-blue{
+    color: cornflowerblue;
+}
+
+.text-navbar{
+    color: rgb(24, 41, 51);
+    font-size: 16px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-weight: bolder;
+}
+
+.text-inside{
+    color: #6f7d85;
+}
+
+.text-light{
+    color: #f4f4f4;
+}
+
+.text-black{
+    color:#000000;
+}
+
+.text-grey{
+    color: #555;
+}
+
+.text-purple{
+    color: blueviolet;
+}
+
+.text-footer{
+    color :rgb(24, 41, 51);
+}
+
+.text-inside-back{
+    background: #6f7d85;
+}
+
+.bg-dark{
+    background:rgb(24, 41, 51) ;
+}
+
+
+
+/* #################### Featured Product ########################## */
+
+.raw {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    flex-direction: column;
+}
+
+@media (min-width: 350px){
+.col-md-6 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+}
+@media (min-width: 500px) {
+    .col-md-6 {
+        flex: 0 0 auto;
+        width: 25%; /* Divide the row into four equal parts */
+    }
+}
+.container-brand{
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+}
+
+.container-brand img{
+    padding: 5px;
+    
+}
+
+.raw h2{
+    text-align: center;
+}
+/* 
+.raw1:hover{
+opacity: 0.6;
+}
+
+.raw2:hover{
+    opacity: 0.6;
+    }
+
+.raw3:hover{
+    opacity: 0.6;
+    }
+         */
+/* 
+.raw2{
+ padding-left:10px ;
+ padding-right:10px ;
+} */
+
+
+
+.header .raw{
+    margin-top: 70px;
+
+}
+
+
+.categories{
+    margin: 70px 0;
+}
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.col-5{
+    flex-basis: 25%;
+    
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition:transform 0.5s;
+}
+.col-4{
+    flex-basis: 25%;
+    
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition:transform 0.5s;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .raw1:hover .image {
+    opacity: 0.3;
+  }
+  
+  .raw1:hover .middle {
+    opacity: .9;
+  }
+  
+  .raw2:hover .image {
+    opacity: 0.3;
+  }
+  
+  .raw2:hover .middle {
+    opacity: .9;
+  }
+  .raw3:hover .image {
+    opacity: 0.3;
+  }
+  
+  .raw3:hover .middle {
+    opacity: .9;
+  }
+  
+  .text {
+    
+    color: black;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+.col-5 img{
+    width: 100%;
+}
+.col-4 img{
+    width: 100%;
+}
+
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+.title::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.col-5 h4{
+    color: rgb(0, 0, 0);
+    
+    font-size: 12.5px;
+    font-weight: normal;
+}
+.col-4 h4{
+    color: rgb(0, 0, 0);
+    
+    font-size: 12.5px;
+    font-weight: normal;
+}
+
+.col-5 p{
+    font-size: 14px;
+}
+
+.col-4 p{
+    font-size: 14px;
+}
+
+.col-5{
+    transform: translateY(-5px);
+}
+
+.col-4{
+    transform: translateY(-5px);
+}
+
+.offer{
+    background: radial-gradient(#fff);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+
+.col-2 .offer-img{
+    padding: 50px;
+}
+
+.small{
+    color: #555;
+
+}
+
+
+.zoom {
+    /*padding: 10px;*/
+   
+    transition: transform .2s; /* Animation */
+   
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    transform: scale(1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+
+
+
+  /* Confirmation page */
+
+      .card{
+        text-align: center;
+        padding: 40px 0;
+
+      }
+       .card h1 {
+          color: #88B04B;
+          font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+          font-weight: 900;
+          font-size: 40px;
+          margin-bottom: 10px;
+        }
+        .card p {
+          color: #404F5E;
+          font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+          font-size:20px;
+          margin: 0;
+        }
+      .card i {
+        color: #9ABC66;
+        font-size: 100px;
+        line-height: 200px;
+        margin-left:-15px;
+      }
+      .card {
+        background: white;
+        padding: 3px;
+        border-radius: 1px;
+        box-shadow: 0 2px 3px #C8D0D8;
+        display: inline-block;
+        margin: 101px auto;
+      }
+
+
+      .container-c{
+        max-width: 1400px;
+        width: 49%;
+        margin: 0 auto;
+      }
+
+
+
+      /* counter */
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+
+
+
+
+
+
+  /* Center the content horizontally */
+  .center {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Container for the buttons and number */
+  .container-c {
+    display: flex;
+    align-items: center;
+    background-color: #fff; /* Light gray background */
+    border-radius: 10px;
+    padding: 10px;
+    width: 230px;
+  }
+
+  .container-c button{
+    font-size: 0.8rem;
+    font-weight: 900;
+    outline: none;
+    border: none;
+    background-color: #1d1d1d;
+    color: aliceblue;
+    padding: 9px 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s ease;
+  }
+
+  /* Cute button style */
+  .container-c .button button {
+    border: none;
+    background-color: black;
+    color: #fff;
+    font-size: 20px;
+    width: 40px;
+    height: 44px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Hide default number style */
+  .container-c .number h2 {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: none;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    border-radius: 50%;
+    background-color: #f5f5f5; /* Light gray background */
+    margin: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+      
+
+
+  /* Cute button style */
+  .cute-form-cell form button {
+    border: none;
+    background-color: black;
+    color: #fff;
+    font-size: 20px;
+    width: 40px;
+    height: 44px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Hide default number input style */
+  .cute-form-cell form h3 {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: none;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    border-radius: 50%;
+    background-color: #f5f5f5; /* Light gray background */
+    margin: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .cute-form-cell button{
+    font-size: 0.8rem;
+    font-weight: 900;
+    outline: none;
+    border: none;
+    background-color: #1d1d1d;
+    color: aliceblue;
+    padding: 8px 13px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s ease;
+  }
+
+  /* Add some padding for the form */
+  .cute-form-cell form {
+    padding: 10px;
+    /* border: 2px solid #ffc0cb; */
+    /* border-radius: 10px; */
+    width: 230px;
+    margin: -44px;
+  }
+
+  /* Align the buttons and number input */
+  .cute-form-cell form button, .cute-form-cell form h3 {
+    vertical-align: middle;
+  }
+

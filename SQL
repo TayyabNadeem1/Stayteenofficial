@@ -1,0 +1,54 @@
+-- create table orders(
+--  	order_id int AUTO_INCREMENT,
+--     order_cost decimal(6,2) NOT NULL,
+--     order_status varchar(255) NOT NULL,
+--     user_id int ,
+
+--     user_phone int NOT NULL,
+--     user_city varchar(255) NOT NULL,
+--     user_address varchar(255) NOT NULL,
+--     order_date date NOT NULL,
+--     PRIMARY KEY(order_id)
+    
+-- );
+
+-- create table products(
+--     product_id int(11)  NOT NULL AUTO_INCREMENT,
+--     product_name varchar(255) NOT NULL,
+--     product_category varchar(255),
+--     product_description varchar(255),
+--     product_img varchar(255),
+--     product_img1 varchar(255),
+--     product_img2 varchar(255),
+--     product_img3 varchar(255),
+--     product_img4 varchar(255),
+--     product_price decimal(6,2),
+--     PRIMARY KEY(product_id)
+    
+-- );
+
+-- create table order_items(
+--  	item_id int NOT NULL AUTO_INCREMENT,
+--     order_id int NOT NULL,
+--     product_id int NOT NULL,
+--     product_name varchar(255) NOT NULL,
+--     product_img blob,
+--     product_price decimal(6,2) NOT NULL,
+-- 	product_quantity int NOT NULL,
+--     user_id int NOT NULL,
+--     order_date date NOT NULL,
+--     PRIMARY KEY(item_id)
+    
+-- );
+
+-- create table payments(
+--  	payment_id int(11) NOT NULL AUTO_INCREMENT,
+--  	order_id int(11) NOT NULL,
+--     user_id int(11) NOT NULL,
+--     transaction_id varchar(255) NOT NULL,
+--     customer_name varchar(255),
+--     PRIMARY KEY(payment_id)
+-- );
+
+
+pattern="(\+92|0092|92)?3[0-9]{9}"

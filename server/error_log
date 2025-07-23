@@ -1,0 +1,8 @@
+[08-Feb-2024 01:03:59 UTC] PHP Warning:  Undefined array key "total" in /home/s8txyxcxegve/public_html/server/place_order.php on line 12
+[08-Feb-2024 01:03:59 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'order_cost' cannot be null in /home/s8txyxcxegve/public_html/server/place_order.php:25
+Stack trace:
+#0 /home/s8txyxcxegve/public_html/server/place_order.php(25): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/s8txyxcxegve/public_html/server/place_order.php on line 25
+[16-Apr-2024 21:06:39 UTC] PHP Warning:  Undefined array key "cart" in /home/s8txyxcxegve/public_html/server/place_order.php on line 43
+[16-Apr-2024 21:06:39 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/s8txyxcxegve/public_html/server/place_order.php on line 43

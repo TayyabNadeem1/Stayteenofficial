@@ -1,0 +1,242 @@
+
+<?php  include('layouts/header.php'); ?>
+
+
+
+
+      <!-- Home--->
+        <section id="home">
+            <div class="container">
+                <h4 > NEW ARRIVALS</h4>
+                <h1><span>Stayteen </span>Unleash the Glow Within! </h1>
+                <!-- <h4>Discover a range of premium facial skincare essentials, carefully crafted to embrace and celebrate your youthful spirit, making skincare a delightful journey with StayTeen</h4> -->
+                <a href="#open_shop"><button class="buy-btn">Shop Now</button></a>
+            </div>
+        </section>
+        
+        
+        <!-- Brand --> 
+         <!-- <section id="brand" class="container" >
+         <div class="container text-center mt-5 py-5 "id="open_shop">
+              <h2>Popular Collections</h2>
+              <hr>
+              <h5>Here are the Collections</h5>
+          </div> 
+            <div class="container-brand">
+              
+                <a href="#featured1"> <img class="raw1 img-flid col-lg-3 col-md-7 col-sm-14" src="assets/imgs/Whitening Facial Series.jpg"/>
+                
+              </a>
+      
+
+                <a href="#featured2"> <img class="raw2 img-flid col-lg-3 col-md-7 col-sm-14" src="assets/imgs/Gold Facial Series.jpg"/>
+                
+              </a>
+
+                <a href="#featured3"> <img class="raw3 img-flid col-lg-3 col-md-7 col-sm-14" src="assets/imgs/Charcoal Facial Series.jpg"/>
+                
+              </a>
+
+               
+            </div>
+        </section> -->
+
+
+        <div class="small-container">
+        <div class="container text-center mt-5 py-5 "id="open_shop">
+              <h2>Popular Collections</h2>
+              <hr>
+              <h5>Here are the Collections</h5>
+          </div> 
+        <div class="raw">
+            <div class="raw1 col-4 col-lg-3 col-md-4 col-sm-12">
+            <a href="#featured1"><img class= "image" src="assets/imgs/Whitening Facial Series.jpg"/></a>
+            <h2 class="text-red image">Gentle Daily Facewash</h2>    
+              <div class="middle">
+              
+                <h1>Click</h1>
+
+              </div>
+            </div>
+
+            <div class="raw2 col-4 col-lg-3 col-md-4 col-sm-12">
+            <a href="#featured2"> <img class="image" src="assets/imgs/Gold Facial Series.jpg"></a>
+            <h2 class="text-red image">24K Gold Series</h2>
+                <div class="middle">
+                <!-- <div class="text"> Click</div> -->
+                <h1>Click</h1>
+
+              </div>
+            </div>
+            
+            <div class=" raw3 col-4 col-lg-3 col-md-4 col-sm-12">
+            
+            <a href="#featured3"> <img class="image"src="assets/imgs/Charcoal Facial Series.jpg"></a>
+            
+            <h2 class="text-red image">Charcoal Facewash</h2>            
+            <div class="middle">
+                <!-- <div class="text"> Click</div> -->
+                <h1>Click</h1>
+
+              </div>
+            </div>
+
+        </div>
+
+
+
+        <!-- #Featured -->
+        <section id="featured1" class="my-5 pb-5" >
+          
+        <div class="row mx-auto container-fluid">
+        <div class="container text-center mt-5 py-5 "id="open_shop">
+              <h2>Whitening Face Wash</h2>
+              <hr>
+              <h5>Here are the exclusive</h5>
+          </div>
+           <?php include('server/retrieve_product.php');?>
+
+           <?php while($row = $featured_products->fetch_assoc()){ ?>
+              <div class="product text-center col-lg-3 col-md-6 col-sm-8">
+              <a href="<?php echo "single_product_page.php?product_id=". $row['product_id'];?>">
+              <img class="img-fluid zoom  mb-3" src="/<?php echo  $row['product_img'] ?> ">
+                </a>
+            
+
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i> 
+                  </div>
+                  <h3 class="p-name"><?php echo $row['product_name'];?></h3>
+                  <h4 class="p-price">Rs. <?php echo $row['product_price']; ?></h4>
+                  <a href="<?php echo "single_product_page.php?product_id=". $row['product_id'];?>"><button class="buy-btn"> Buy Now</button></a>
+                  
+              </div>
+              
+              <?php } ?>          
+
+           </div>
+      </section>
+
+    <!-- Gold 24 Karat Section -->
+
+      <section id="featured2" class="my-5 pb-5" >
+          
+          <div class="row mx-auto container-fluid">
+          <div class="container text-center mt-5 py-5 "id="open_shop">
+                <h2>24 karat Gold </h2>
+                <hr>
+                <h5>Here are our excluesive</h5>
+            </div>
+             <?php include('server/retrieve_product.php');?>
+  
+             <?php while($row = $featured_products_gold->fetch_assoc()){ ?>
+                <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+                <a href="<?php echo "single_product_page.php?product_id=". $row['product_id'];?>">
+                <img class="img-fluid zoom mb-3" src="/<?php echo  $row['product_img'] ?> ">
+                  </a>
+              
+  
+                    <div class="star">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i> 
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i> 
+                    </div>
+                    <h3 class="p-name"><?php echo $row['product_name'];?></h3>
+                    <h4 class="p-price"><strong>Rs. <?php echo $row['product_price']; ?> </strong></h4>
+                    <a href="<?php echo "single_product_page.php?product_id=". $row['product_id'];?>"><button class="buy-btn"> Buy Now</button></a>
+                    
+                </div>
+                
+                <?php } ?>          
+  
+             </div>
+        </section>
+      
+
+            <!-- Charcoal Section -->
+
+      <section id="featured3" class="my-5 pb-5" >
+          
+          <div class="row mx-auto container-fluid">
+          <div class="container text-center mt-5 py-5 "id="open_shop">
+                <h2>Charcoal </h2>
+                <hr>
+                <h5>Here are our excluesive</h5>
+            </div>
+             <?php include('server/retrieve_product.php');?>
+  
+             <?php while($row = $featured_products_charcoal->fetch_assoc()){ ?>
+                <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+                <a href="<?php echo "single_product_page.php?product_id=". $row['product_id'];?>">
+                <img class="img-fluid zoom mb-3" src="/<?php echo  $row['product_img'] ?> ">
+                  </a>
+              
+  
+                    <div class="star">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i> 
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i> 
+                    </div>
+                    <h3 class="p-name"><?php echo $row['product_name'];?></h3>
+                    <h4 class="p-price"><strong>Rs. <?php echo $row['product_price']; ?> </strong></h4>
+                    <a href="<?php echo "single_product_page.php?product_id=". $row['product_id'];?>"><button class="buy-btn"> Buy Now</button></a>
+                    
+                </div>
+                
+                <?php } ?>          
+  
+             </div>
+        </section>
+
+                    <!-- Professional Section -->
+
+      <section id="featured" class="my-5 pb-5" >
+          
+          <div class="row mx-auto container-fluid">
+          <div class="container text-center mt-5 py-5 "id="open_shop">
+                <h2>Professional Series </h2>
+                <hr>
+                <h5>Here are our excluesive</h5>
+            </div>
+             <?php include('server/retrieve_product.php');?>
+  
+             <?php while($row = $featured_products_professional->fetch_assoc()){ ?>
+                <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+                <a href="<?php echo "single_product_page.php?product_id=". $row['product_id'];?>">
+                <img class="img-fluid zoom mb-3" src="/<?php echo  $row['product_img'] ?> ">
+                  </a>
+              
+  
+                    <div class="star">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i> 
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i> 
+                    </div>
+                    <h3 class="p-name"><?php echo $row['product_name'];?></h3>
+                    <h4 class="p-price"><strong>Rs. <?php echo $row['product_price']; ?> </strong></h4>
+                    <a href="<?php echo "single_product_page.php?product_id=". $row['product_id'];?>"><button class="buy-btn"> Buy Now</button></a>
+                    
+                </div>
+                
+                <?php } ?>          
+  
+             </div>
+        </section>
+
+
+</div>
+
+
+<!-- End of .container -->
+
+<?php include('layouts/footer.php'); ?>

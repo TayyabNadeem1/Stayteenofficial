@@ -1,0 +1,26 @@
+                  <img class="img-fluid mb-3" src="/assets/imgs/<?php echo  $row['product_img'] ?>"/>
+                  
+  //   $product_id = $_POST['product_id'];
+  //   unset($_SESSION['cart']);
+  // 
+
+
+
+
+function calculateTotalCart(){
+
+  $total = 0;
+  foreach($_SESSION['cart'] as $key => $value){
+
+    $product = $_SESSION['cart'][$key];
+
+    $price = $product['product_price'];
+    $quantity = $product['product_quantity'];
+
+    $total = $total + ($price * $quantity);
+
+
+  }
+
+  $_SESSION['total'] = $total;
+}
